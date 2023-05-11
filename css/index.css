@@ -533,14 +533,14 @@ header {
   z-index: 100;
   position: absolute;
   position: fixed;
-  height: 200px;
+  height: 100px;
   width: 100%;
   background-color: black;
 }
 
 .logo img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   margin-left: 10px;
   border-radius: 50%;
 }
@@ -601,7 +601,7 @@ header {
 .abrir-menu i,
 .cerrar-menu i {
   color: white;
-  font-size: 50px
+  font-size: 40px
 }
   
 .abrir-menu,
@@ -700,7 +700,7 @@ header {
 }
 
 .quienes-somos p {
-  width: 500px;
+  width: 90%;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
@@ -925,7 +925,7 @@ header {
 
 /* SEGUINOS EN INSTAGRAM */
 .seguinos-en-instagram {
-  height: 800px;
+  height: 400px;
 }
 .seguinos-en-instagram h2{
   text-align: center;
@@ -943,10 +943,10 @@ header {
 }
 .seguinos-en-instagram__imagenes img {
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   flex-direction: row;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .instagram-clur {
