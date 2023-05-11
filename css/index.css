@@ -676,7 +676,7 @@ header {
   .carousel-item img {
     padding-top: 50px;
     justify-content: center;
-    height: 650px;
+    height: 800px;
     margin: 0 auto;
     width: 90%;
   }
@@ -720,8 +720,9 @@ header {
 
 .tienda {
   height: 900px;
-  width: 100%;
+  width: 90%;
   padding-top: 0;
+  margin: 0 auto;
   display: block;
   justify-content: center;
   color: white;
@@ -819,7 +820,7 @@ header {
 
 /* SERVICIOS */
 .servicios-item {
-  height: 750px;
+  height: 950px;
   width: 100%;
   background-color: rgb(238, 238, 238);
   flex-direction: column;
@@ -839,8 +840,8 @@ header {
 }
 
 .servicios-reparaciones {
-  height: 300px;
-  width: 80%;
+  height: 400px;
+  width: 90%;
   margin: 0 auto;
   margin-top: 20px;
   color: white;
@@ -882,8 +883,8 @@ header {
 }
 
 .servicios-nosotros {
-  height: 300px;
-  width: 80%;
+  height: 400px;
+  width: 90%;
   margin-top: 10px;
   margin: 0 auto;
   color: white;
@@ -1009,6 +1010,7 @@ header {
 .sobre-nosotros p{
   margin-left: 5px;
   font-size: 20px;
+  width: 90%;
 }
 
 .contacto-item .contacto {
@@ -1024,6 +1026,7 @@ header {
 
 .contacto p {
   font-size: 20px;
+  width: 90%;
 }
 
 .direccion {
@@ -1040,7 +1043,8 @@ header {
 
 .contacto-item .mapa {
   margin: 5px auto;
-  width: 510px;
+  width: 400px;
+  height: 300;
   border: 1px solid rgb(209, 209, 209);
 }
 
