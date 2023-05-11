@@ -664,19 +664,16 @@ header {
 
   /* SLIDER */
   .carousel {
-    top: 400px;
-    top: 30px;
     width: 100%;
     max-width: 1000px;
     min-width: 320px;
     margin: 0 auto;
-    height: 800px;
+    height: 650px;
   }
   
   .carousel-item img {
-    padding-top: 50px;
     justify-content: center;
-    height: 800px;
+    height: 500px;
     margin: 0 auto;
     width: 90%;
   }
@@ -719,7 +716,7 @@ header {
 }
 
 .tienda {
-  height: 900px;
+  height: 1000px;
   width: 90%;
   padding-top: 0;
   margin: 0 auto;
@@ -745,7 +742,7 @@ header {
 .fundas {
   margin: 0 AUTO;
   height: 400px;
-  width: 100%;
+  width: 90%;
   background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg) ;
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
@@ -767,8 +764,8 @@ header {
 
 .accesorios {
   margin: 10px auto;
-  height: 300px;
-  width: 100%;
+  height: 400px;
+  width: 90%;
   background-image: url(../img/accesorios/protector-camara/Iphone14\(gray\).jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
@@ -787,8 +784,8 @@ header {
 
 .equipos {
   margin: 10px auto;
-  height: 300px;
-  width: 100%;
+  height: 400px;
+  width: 90%;
   background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
@@ -1043,8 +1040,8 @@ header {
 
 .contacto-item .mapa {
   margin: 5px auto;
-  width: 400px;
-  height: 300;
+  width: 90%;
+  height: 300px;
   border: 1px solid rgb(209, 209, 209);
 }
 
