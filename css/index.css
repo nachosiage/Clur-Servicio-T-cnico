@@ -1,0 +1,1098 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  padding-bottom: 220px;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  z-index: 100;
+  position: absolute;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.logo {
+  max-width: 5rem;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+  
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  margin-right: 50px;
+}
+  
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  }
+
+  .nav-list li a.active {
+    text-decoration:underline;
+  }
+  
+.nav-list li a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  transition: .2s;
+}
+
+.jet-dropdown-arrow {
+  color: #fff;
+}
+
+.jet-dropdown-arrow:hover {
+  color: #000;
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 250px;
+  background-color: black;
+}
+
+.menu-vertical li a  {
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+}
+
+.nav-list li:hover .menu-vertical {
+  display: block;
+}
+
+.abrir-menu i,
+.cerrar-menu i {
+  color: white;
+  font-size: 30px
+}
+  
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+.activo {
+  border-bottom: 1px solid white;
+}
+
+
+/* SLIDER */
+.carousel {
+  margin-top:150px;
+  padding-top: 130PX;
+  width: 100vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.carousel button {
+  padding-top: 150px;
+}
+
+.carousel-item img {
+  margin-top:300px;
+  border-radius: 50px;
+  height: 700px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0px 3px 5px rgba(15,15,15,.5);
+}
+
+
+
+/* QUIENES SOMOS */
+.quienes-somos{
+  height: 400px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 30px;
+}
+
+.quienes-somos h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-somos p {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+/* TIENDA */
+.titulo-tienda {
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+}
+
+.tienda {
+  height: 300px;
+  width: 100%;
+  padding-top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.tienda button {
+  border-color: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.tienda button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+.fundas {
+  height: 300px;
+  width: 250px;
+  background-image: url(../img/ingresos/ingreso1.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.accesorios {
+  height: 300px;
+  width: 250px;
+  background-image: url(../img/ingresos/ingreso2.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.equipos {
+  height: 300px;
+  width: 250px;
+  background-image: url(../img/ingresos/ingreso3.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.equipos img {
+  object-fit:cover;
+}
+
+.fundas, .accesorios, .equipos {
+  height: 250px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+
+
+/* SERVICIOS */
+.servicios-item {
+  height: 750px;
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  flex-direction: column;
+}
+
+.servicios-item h2 {
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+}
+
+.servicios-totales .servicios-nosotros {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.servicios-reparaciones {
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  background-image: url(../img/ingresos/ingreso3.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+
+.servicios-reparaciones p {
+  margin-left: 20px;
+}
+
+.servicios-reparaciones ul li {
+  margin-left: 30px;
+}
+
+.servicios-reparaciones button {
+  margin-left: 20px;
+}
+
+.servicios-reparaciones button {
+  border-color: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.servicios-reparaciones button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+.servicios-nosotros {
+  height: 300px;
+  width: 80%;
+  margin-top: 10px;
+  margin: 0 auto;
+  color: white;
+  background-image: url(../img/ingresos/ingreso3.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+
+.servicios-nosotros p {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.servicios-nosotros button {
+  border-color: 1px solid white;
+  color: white;
+  margin-left: 20px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.servicios-nosotros button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+/* SEGUINOS EN INSTAGRAM */
+.seguinos-en-instagram {
+  height: 400px;
+}
+.seguinos-en-instagram h2{
+  text-align: center;
+  padding: 10px;
+}
+
+.seguinos-en-instagram__imagenes {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.seguinos-en-instagram__imagenes img {
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  flex-direction: row;
+  margin: 0 5px;
+}
+
+.instagram-clur {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(102, 102, 224);
+  border-color: rgb(102, 102, 224);
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.instagram-clur a {
+  color: white;
+  font-family: 'Roboto';
+}
+
+
+.seguinos-en-instagram button{
+  background-color: rgb(58, 58, 255);
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  justify-content: center;
+  margin-left: 39%;
+  border: none;
+
+}
+
+.seguinos-en-instagram a {
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.seguinos-en-instagram i {
+  color: white;
+}
+
+
+/* CONTACTO */
+.contacto-item {
+  height: 350px;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+}
+
+.contacto-item .sobre-nosotros {
+  height: 250px;
+  width: 420px;
+  margin: 0 10px;
+  
+}
+
+.contacto-item .sobre-nosotros h3{
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.contacto p{
+  margin-left: 5px;
+}
+
+.contacto-item .contacto {
+  height: 250px;
+  width: 430px;
+  margin: 0 10px;
+}
+
+.contacto-item .contacto h3 {
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.direccion {
+  display: flex;
+}
+
+.numero-whatsapp {
+  display: flex;
+}
+
+.telefono {
+  display: flex;
+}
+
+.contacto-item .mapa {
+  margin: 0 10px;
+  border: 1px solid rgb(209, 209, 209);
+}
+
+
+
+
+/* PIE DE PAGINA  */
+.piedepagina {
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  display: block;
+  align-items: center;
+  position: absolute;
+
+}
+.piedepagina img {
+  height: 60px;
+  margin-top: 10px;
+}
+
+.copyright {
+  color: #f7f6da;
+}
+
+
+/* BOTON FLOTANTE */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 1px 1px 2px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+@media screen and (max-width: 1300px) {
+
+  html {
+    scroll-behavior: smooth;
+}
+
+
+/* HEADER */
+header {
+  z-index: 100;
+  position: absolute;
+  position: fixed;
+  height: 200px;
+  width: 100%;
+  background-color: black;
+}
+
+.logo img {
+  height: 200px;
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+  
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  margin-right: 50px;
+}
+  
+.nav-list li a {
+  list-style-type: none;
+  display: flex;
+  font-size: 20px;
+  gap: 3rem;
+  margin-right: 50px;
+  text-decoration: none;
+  color: white;
+  }
+
+.nav-list li a.active {
+  text-decoration:underline;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  transition: .2s;
+}
+
+.jet-dropdown-arrow {
+  color: #fff;
+}
+
+.jet-dropdown-arrow:hover {
+  color: #000;
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 300px;
+  background-color: black;
+}
+
+.menu-vertical li a  {
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+}
+
+.nav-list li:hover .menu-vertical {
+  display: block;
+}
+
+.abrir-menu i,
+.cerrar-menu i {
+  color: white;
+  font-size: 50px
+}
+  
+.abrir-menu,
+  .cerrar-menu {
+      display: block;
+      margin-right: 30px;
+      border: 0;
+      font-size: 16px;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: white;
+      font-size: 30px;
+      margin-left: 100px;
+  }
+
+  .cerrar-menu {
+      color: #ececec;
+      font-size: 30px;
+  }
+
+  .nav {
+    z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+      transition: .5s;
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .nav-list {
+    margin-top: 100px;
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-list li a {
+      color: #ecececec;
+      font-size: 30px;
+  }
+
+
+
+
+  /* SLIDER */
+  .carousel {
+    top: 400px;
+    top: 30px;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 800px;
+  }
+  
+  .carousel-item img {
+    padding-top: 50px;
+    justify-content: center;
+    height: 650px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+
+
+/* QUIENES SOMOS */
+.quienes-somos{
+  height: 400px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 30px;
+}
+
+.quienes-somos h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-somos p {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+/* TIENDA */
+.titulo-tienda {
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.tienda {
+  height: 900px;
+  width: 100%;
+  padding-top: 0;
+  display: block;
+  justify-content: center;
+  color: white;
+}
+
+.tienda button {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.tienda button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+.fundas {
+  margin: 0 AUTO;
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg) ;
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: gray;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.fundas p {
+  font-size: 20px;
+}
+
+
+
+.accesorios {
+  margin: 10px auto;
+  height: 300px;
+  width: 100%;
+  background-image: url(../img/accesorios/protector-camara/Iphone14\(gray\).jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.accesorios p {
+  font-size: 20px;
+}
+
+.equipos {
+  margin: 10px auto;
+  height: 300px;
+  width: 100%;
+  background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.equipos p {
+  font-size: 20px;
+}
+
+.equipos img {
+  object-fit:cover;
+}
+
+.fundas, .accesorios, .equipos {
+  height: 250px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+
+
+
+/* SERVICIOS */
+.servicios-item {
+  height: 750px;
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  flex-direction: column;
+}
+
+.servicios-item h2 {
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.servicios-totales .servicios-nosotros {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.servicios-reparaciones {
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  background-image: url(../img/servicios/cambiodemodulo.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+
+.servicios-reparaciones p {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.servicios-reparaciones ul li {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.servicios-reparaciones button {
+  margin-left: 20px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+
+.servicios-reparaciones button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+.servicios-nosotros {
+  height: 300px;
+  width: 80%;
+  margin-top: 10px;
+  margin: 0 auto;
+  color: white;
+  background-image: url(../img/nosotros/WhatsApp\ Image\ 2023-05-09\ at\ 14.21.42.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+
+.servicios-nosotros p {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.servicios-nosotros button {
+  border: 1px solid white;
+  color: white;
+  margin-left: 20px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.servicios-nosotros button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+
+
+
+
+/* SEGUINOS EN INSTAGRAM */
+.seguinos-en-instagram {
+  height: 800px;
+}
+.seguinos-en-instagram h2{
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.seguinos-en-instagram__imagenes {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.seguinos-en-instagram__imagenes img {
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  flex-direction: row;
+  margin: 0 5px;
+}
+
+.instagram-clur {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(102, 102, 224);
+  border-color: rgb(102, 102, 224);
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.instagram-clur a {
+  color: white;
+  font-family: 'Roboto';
+}
+
+
+.seguinos-en-instagram button a {
+  font-size: 18px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.seguinos-en-instagram button {
+  display: flex;
+  height: 50px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.seguinos-en-instagram a {
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.seguinos-en-instagram i {
+  color: white;
+}
+
+
+/* CONTACTO */
+.contacto-item {
+  height: 800px;
+  background-color: rgb(238, 238, 238);
+  display: block;
+  align-items: center;
+}
+
+.contacto-item .sobre-nosotros {
+  height: 250px;
+  width: 420px;
+  margin: 0 10px;
+}
+
+.contacto-item .sobre-nosotros h3 {
+  padding-top: 20px;font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.sobre-nosotros p{
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.contacto-item .contacto {
+  height: 250px;
+  width: 430px;
+  margin: 0 10px;
+}
+
+.contacto-item .contacto h3 {
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.contacto p {
+  font-size: 20px;
+}
+
+.direccion {
+  display: flex;
+}
+
+.numero-whatsapp {
+  display: flex;
+}
+
+.telefono {
+  display: flex;
+}
+
+.contacto-item .mapa {
+  margin: 5px auto;
+  width: 510px;
+  border: 1px solid rgb(209, 209, 209);
+}
+
+
+
+
+/* PIE DE PAGINA  */
+.piedepagina {
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  display: block;
+  align-items: center;
+  position: absolute;
+
+}
+.piedepagina img {
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.copyright {
+  color: #f7f6da;
+}
+
+
+/* BOTON FLOTANTE */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 1px 1px 2px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+}

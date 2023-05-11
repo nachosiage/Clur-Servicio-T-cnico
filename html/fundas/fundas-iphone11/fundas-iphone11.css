@@ -1,0 +1,546 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    position: relative;
+    padding-bottom: 220px;
+    min-height: 100vh;
+  }
+  
+  
+  /* HEADER */
+  header {
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: relative;
+    position: fixed;
+  }
+  .logo {
+  max-width: 5rem;
+  margin-left: 50px;
+  border-radius: 50%;
+  }
+  
+  .nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  margin-right: 50px;
+  }
+  
+  .nav-list li a {
+  text-decoration: none;
+  color: white;
+  }
+  
+  .nav-list li a.active {
+    text-decoration:underline;
+  }
+  
+  .nav-list li a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  transition: .2s;
+  }
+  
+  .jet-dropdown-arrow {
+  color: #fff;
+  }
+  
+  .jet-dropdown-arrow:hover {
+  color: #000;
+  }
+  
+  .menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 250px;
+  background-color: black;
+  }
+  
+  .menu-vertical li a  {
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+  }
+  
+  .nav-list li:hover .menu-vertical {
+  display: block;
+  }
+  
+  .abrir-menu i,
+  .cerrar-menu i {
+  color: white;
+  font-size: 30px
+  }
+  
+  .abrir-menu,
+  .cerrar-menu {
+  display: none;
+  }
+
+
+
+/* TIENDA */
+.titulo-fundas {
+    margin-top: 150px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-left: 10%;
+    flex-direction: column;
+  }
+  
+  .titulo-iphone {
+    width: 100%;
+    height: 30px;
+    font-family: 'Roboto';
+    padding-left: 10%;
+  }
+  
+  .fundas hr {
+    width: 80%;
+    height: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor img {
+    width: 250px;
+    height: 280px;
+    object-fit: fill;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .contenedor .informacion {
+    width: 250px;
+    height: 100px;
+    object-fit: fill;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(79, 79, 255);
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .contenedor .informacion p {
+    height: 30px;
+    padding: 15px;
+  }
+  
+  .contenedor .informacion a {
+    color: white;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* CONTACTO */
+.contacto-item {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto-item .sobre-nosotros {
+    height: 250px;
+    width: 420px;
+    margin: 0 10px;
+    
+  }
+  
+  .contacto-item .sobre-nosotros h3{
+    font-size: 25px;
+    font-family: 'Roboto';
+  }
+  
+  .contacto p{
+    margin-left: 5px;
+  }
+  
+  .contacto-item .contacto {
+    height: 250px;
+    width: 430px;
+    margin: 0 10px;
+  }
+  
+  .contacto-item .contacto h3 {
+    font-size: 25px;
+    font-family: 'Roboto';
+  }
+  
+  .direccion {
+    display: flex;
+  }
+  
+  .numero-whatsapp {
+    display: flex;
+  }
+  
+  .telefono {
+    display: flex;
+  }
+  
+  .contacto-item .mapa {
+    margin: 0 10px;
+    border: 1px solid rgb(209, 209, 209);
+  }
+  
+  
+  
+  
+  /* PIE DE PAGINA  */
+  .piedepagina {
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    align-items: center;
+    position: absolute;
+  }
+
+  .piedepagina img {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+  
+  .copyright {
+    color: #f7f6da;
+  }
+  
+  
+  /* BOTON FLOTANTE */
+  .float{
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      background-color:#25d366;
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+    font-size:30px;
+      box-shadow: 1px 1px 2px #999;
+    z-index:100;
+  }
+  .float:hover {
+      text-decoration: none;
+      color: #25d366;
+    background-color:#fff;
+  }
+  
+  .my-float{
+      margin-top:16px;
+  }
+  
+  
+  @keyframes cambio {
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+  
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+  
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+  
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+  }
+  
+
+
+
+  @media screen and (max-width: 1300px) {
+    html {
+      scroll-behavior: smooth;
+  }
+  
+  
+  /* HEADER */
+  header {
+    z-index: 100;
+    position: absolute;
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .logo img {
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+    
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 50px;
+  }
+    
+  .nav-list li a {
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+    gap: 3rem;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    }
+  
+  .nav-list li a.active {
+    text-decoration:underline;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .2s;
+  }
+  
+  .jet-dropdown-arrow {
+    color: #fff;
+  }
+  
+  .jet-dropdown-arrow:hover {
+    color: #000;
+  }
+  
+  .menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 300px;
+    background-color: black;
+  }
+  
+  .menu-vertical li a  {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+  }
+  
+  .nav-list li:hover .menu-vertical {
+    display: block;
+  }
+  
+  .abrir-menu i,
+  .cerrar-menu i {
+    color: white;
+    font-size: 50px
+  }
+    
+  .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        margin-right: 30px;
+        border: 0;
+        font-size: 16px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+  
+    .abrir-menu {
+        color: white;
+        font-size: 30px;
+        margin-left: 100px;
+    }
+  
+    .cerrar-menu {
+        color: #ececec;
+        font-size: 30px;
+    }
+  
+    .nav {
+      z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transition: .5s;
+    }
+  
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+      margin-top: 100px;
+        flex-direction: column;
+        align-items: end;
+    }
+  
+    .nav-list li a {
+        color: #ecececec;
+        font-size: 30px;
+    }
+  
+  
+  
+    /* CONTACTO */
+  .contacto-item {
+    height: 800px;
+    background-color: rgb(238, 238, 238);
+    display: block;
+    align-items: center;
+  }
+  
+  .contacto-item .sobre-nosotros {
+    height: 250px;
+    width: 420px;
+    margin: 0 10px;
+  }
+  
+  .contacto-item .sobre-nosotros h3 {
+    padding-top: 20px;font-size: 25px;
+    font-family: 'Roboto';
+  }
+  
+  .sobre-nosotros p{
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
+  .contacto-item .contacto {
+    height: 250px;
+    width: 430px;
+    margin: 0 10px;
+  }
+  
+  .contacto-item .contacto h3 {
+    font-size: 25px;
+    font-family: 'Roboto';
+  }
+  
+  .contacto p {
+    font-size: 20px;
+  }
+  
+  .direccion {
+    display: flex;
+  }
+  
+  .numero-whatsapp {
+    display: flex;
+  }
+  
+  .telefono {
+    display: flex;
+  }
+  
+  .contacto-item .mapa {
+    margin: 5px auto;
+    width: 435px;
+    border: 1px solid rgb(209, 209, 209);
+  }
+  
+  
+  
+  
+  /* PIE DE PAGINA  */
+  .piedepagina {
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    align-items: center;
+    position: absolute;
+  
+  }
+  .piedepagina img {
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  .copyright {
+    color: #f7f6da;
+  }
+  
+  
+  /* BOTON FLOTANTE */
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #999;
+    z-index:100;
+  }
+  .float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color:#fff;
+  }
+  
+  .my-float{
+    margin-top:16px;
+  }
+  }
