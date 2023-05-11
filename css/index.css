@@ -675,6 +675,7 @@ header {
     justify-content: center;
     height: 500px;
     margin: 0 auto;
+    border-radius: 20px;
     width: 90%;
   }
 
@@ -716,8 +717,8 @@ header {
 }
 
 .tienda {
-  height: 1000px;
-  width: 90%;
+  height: 800px;
+  width: 100%;
   padding-top: 0;
   margin: 0 auto;
   display: block;
@@ -1039,10 +1040,9 @@ header {
 }
 
 .contacto-item .mapa {
-  margin: 5px auto;
+  margin: 0 auto;
   width: 90%;
-  height: 300px;
-  border: 1px solid rgb(209, 209, 209);
+  height: 260px;
 }
 
 
