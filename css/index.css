@@ -675,7 +675,7 @@ header {
     justify-content: center;
     height: 500px;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 90%;
   }
 
@@ -743,7 +743,7 @@ header {
 .fundas {
   margin: 0 AUTO;
   height: 400px;
-  width: 500px;
+  width: 300px;
   background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg) ;
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
@@ -766,7 +766,7 @@ header {
 .accesorios {
   margin: 10px auto;
   height: 400px;
-  width: 500px;
+  width: 300px;
   background-image: url(../img/accesorios/protector-camara/Iphone14\(gray\).jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
@@ -785,7 +785,7 @@ header {
 
 .equipos {
   margin: 10px auto;
-  height: 400px;
+  height: 300px;
   width: 500px;
   background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
   background-color: rgb(80, 80, 80); 

@@ -507,8 +507,9 @@ header {
 }
 
 .parrafo-nosotros {
+  margin-top: 30px;
   width: 90%;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
 }
 
@@ -528,8 +529,8 @@ header {
 
 .galeria img {
   margin: 30px 30px auto;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border: 1px solid rgb(120, 120, 120);
 }
   
@@ -541,10 +542,9 @@ header {
 
 
 
-
 /* SEGUINOS EN INSTAGRAM */
 .seguinos-en-instagram {
-  height: 800px;
+  height: 400px;
 }
 .seguinos-en-instagram h2{
   text-align: center;
@@ -562,10 +562,10 @@ header {
 }
 .seguinos-en-instagram__imagenes img {
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   flex-direction: row;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .instagram-clur {
@@ -606,8 +606,6 @@ header {
 }
 
 
-
-
 /* CONTACTO */
 .contacto-item {
   height: 800px;
@@ -630,6 +628,7 @@ header {
 .sobre-nosotros p{
   margin-left: 5px;
   font-size: 20px;
+  width: 90%;
 }
 
 .contacto-item .contacto {
@@ -645,6 +644,7 @@ header {
 
 .contacto p {
   font-size: 20px;
+  width: 90%;
 }
 
 .direccion {
@@ -660,9 +660,59 @@ header {
 }
 
 .contacto-item .mapa {
-  margin: 5px auto;
-  width: 435px;
-  border: 1px solid rgb(209, 209, 209);
+  margin: 0 auto;
+  width: 90%;
+  height: 260px;
+}
+
+
+
+
+/* PIE DE PAGINA  */
+.piedepagina {
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  display: block;
+  align-items: center;
+  position: absolute;
+
+}
+.piedepagina img {
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.copyright {
+  color: #f7f6da;
+}
+
+
+/* BOTON FLOTANTE */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 1px 1px 2px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
 }
 
 
