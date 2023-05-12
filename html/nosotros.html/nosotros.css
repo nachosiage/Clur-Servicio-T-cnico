@@ -519,7 +519,7 @@ header {
 /* FOTOS */
 .galeria {
   width: 100%;
-  height: 1300px;
+  height: 900px;
   flex-wrap: wrap;
   display: flex;
   background-color: rgb(238, 238, 238);
@@ -528,9 +528,9 @@ header {
 }
 
 .galeria img {
-  margin: 30px 30px auto;
-  height: 100px;
-  width: 100px;
+  margin: 20px auto;
+  height: 150px;
+  width: 1500px;
   border: 1px solid rgb(120, 120, 120);
 }
   
@@ -661,7 +661,7 @@ header {
 
 .contacto-item .mapa {
   margin: 0 auto;
-  width: 90%;
+  width: 430px;
   height: 260px;
 }
 

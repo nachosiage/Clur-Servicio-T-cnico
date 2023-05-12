@@ -714,11 +714,12 @@ header {
   padding: 20px;
   height: 50px;
   font-size: 30px;
+  flex-direction: column;
 }
 
 .tienda {
   height: 800px;
-  width: 100%;
+  width: 90%;
   padding-top: 0;
   margin: 0 auto;
   display: block;
