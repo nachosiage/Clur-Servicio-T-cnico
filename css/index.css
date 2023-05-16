@@ -712,7 +712,6 @@ header {
 .tienda-item {
   height: 950px;
   width: 100%;
-  background-color: rgb(238, 238, 238);
   flex-direction: column;
 }
 
@@ -724,13 +723,17 @@ header {
   font-size: 30px;
 }
 
+.tienda {
+  flex-direction: column;
+}
+
 .tienda .tienda-accesorios {
   padding: 10px 0;
   margin-top: 20px;
 }
 
 .tienda-reparaciones {
-  height: 400px;
+  height: 300px;
   width: 90%;
   margin: 0 auto;
   margin-top: 20px;
@@ -767,7 +770,7 @@ header {
 }
 
 .tienda-accesorios {
-  height: 400px;
+  height: 300px;
   width: 90%;
   margin-top: 10px;
   margin: 0 auto;
