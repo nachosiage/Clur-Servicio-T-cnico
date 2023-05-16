@@ -529,6 +529,7 @@ header {
 }
 
 
+  
 /* HEADER */
 header {
   z-index: 100;
@@ -536,13 +537,15 @@ header {
   position: fixed;
   height: 100px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: black;
 }
 
-.logo img {
-  height: 100px;
-  width: 100px;
-  margin-left: 10px;
+.logo {
+  max-width: 5rem;
+  margin-left: 50px;
   border-radius: 50%;
 }
   
@@ -554,17 +557,15 @@ header {
 }
   
 .nav-list li a {
-  list-style-type: none;
-  display: flex;
-  font-size: 20px;
-  gap: 3rem;
-  margin-right: 50px;
   text-decoration: none;
   color: white;
   }
 
-.nav-list li a.active {
-  text-decoration:underline;
+  .nav-list li a.active {
+    text-decoration:underline;
+  }
+  
+.nav-list li a:hover {
   text-decoration: none;
   color: black;
   background-color: white;
@@ -585,7 +586,7 @@ header {
   position: absolute;
   display: none;
   list-style: none;
-  width: 300px;
+  width: 250px;
   background-color: black;
 }
 
@@ -602,531 +603,16 @@ header {
 .abrir-menu i,
 .cerrar-menu i {
   color: white;
-  font-size: 40px
+  font-size: 30px
 }
   
 .abrir-menu,
-  .cerrar-menu {
-      display: block;
-      margin-right: 30px;
-      border: 0;
-      font-size: 16px;
-      background-color: transparent;
-      cursor: pointer;
-  }
-
-  .abrir-menu {
-      color: white;
-      font-size: 30px;
-      margin-left: 100px;
-  }
-
-  .cerrar-menu {
-      color: #ececec;
-      font-size: 30px;
-  }
-
-  .nav {
-    z-index: 100;
-      opacity: 0;
-      visibility: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 1rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #1c1c1c;
-      padding: 2rem;
-      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-      transition: .5s;
-  }
-
-  .nav.visible {
-      opacity: 1;
-      visibility: visible;
-  }
-  
-  .nav-list {
-    margin-top: 100px;
-      flex-direction: column;
-      align-items: end;
-  }
-
-  .nav-list li a {
-      color: #ecececec;
-      font-size: 30px;
-  }
-
-
-
-
-  /* SLIDER */
-  .carousel {
-    width: 100%;
-    margin: 0 auto;
-    height: 650px;
-  }
-  
-  .carousel-item img {
-    justify-content: center;
-    height: 500px;
-    margin: 0 auto;
-    border-radius: 30px;
-    width: 90%;
-  }
-
-
-
-/* QUIENES SOMOS */
-.quienes-somos{
-  height: 400px;
-  background-color: rgb(238, 238, 238);
-  margin-top: 30px;
+.cerrar-menu {
+  display: none;
 }
 
-.quienes-somos h2 {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 20px;
-  font-family: 'Roboto';
-  justify-content: center;
-  align-items: center;
-}
-
-.quienes-somos p {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-}
-
-
-
-
-/* TIENDA */
-.tienda-item {
-  height: 700px;
-  width: 100%;
-  flex-direction: column;
-}
-
-.tienda-item h2 {
-  font-family: 'Roboto';
-  text-align: center;
-  padding: 20px;
-  height: 50px;
-  font-size: 30px;
-}
-
-.tienda {
-  flex-direction: column;
-}
-
-.tienda .tienda-accesorios {
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-.tienda-fundas {
-  height: 350px;
-  width: 90%;
-  margin-top: 100px;
-  margin: 0 auto;
-  color: white;
-  background-image: url(../img/fundas/Fundas_iphone14/WhatsApp\ Image\ 2023-05-09\ at\ 14.06.25.jpeg);
-  background-color: rgb(80, 80, 80); 
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  display: flex;
-  border-radius: 20px;
-}
-
-.tienda-fundas p {
-  margin-left: 20px;
-  font-size: 18px;
-}
-
-.tienda-fundas button {
-  margin-left: 20px;
-  border: 1px solid white;
-  color: white;
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
-
-.tienda-fundas button:hover {
-  background-color: white;
-  color: #000;
-  transition: .3s;
-}
-
-.tienda-accesorios {
-  height: 350px;
-  width: 90%;
-  margin-top: 10px;
-  margin: 0 auto;
-  color: white;
-  background-image: url(../img/accesorios/parlantes/JBL-flip5.jpeg);
-  background-color: rgb(80, 80, 80); 
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  display: flex;
-  border-radius: 20px;
-}
-
-.tienda-accesorios p {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.tienda-accesorios button {
-  border: 1px solid white;
-  color: white;
-  margin-left: 20px;
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
-
-.tienda-accesorios button:hover {
-  background-color: white;
-  color: #000;
-  transition: .3s;
-}
-
-
-
-.tienda-equipos {
-  height: 350px;
-  width: 90%;
-  margin-top: 10px;
-  margin: 0 auto;
-  color: white;
-  background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
-  background-color: rgb(80, 80, 80); 
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  display: flex;
-  border-radius: 20px;
-}
-
-.tienda-equipos p {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.tienda-equipos button {
-  border: 1px solid white;
-  color: white;
-  margin-left: 20px;
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
-
-.tienda-equipos button:hover {
-  background-color: white;
-  color: #000;
-  transition: .3s;
-}
-
-
-
-
-
-
-/* SERVICIOS */
-.servicios-item {
-  height: 950px;
-  width: 100%;
-  background-color: rgb(238, 238, 238);
-  flex-direction: column;
-}
-
-.servicios-item h2 {
-  font-family: 'Roboto';
-  text-align: center;
-  padding: 20px;
-  height: 50px;
-  font-size: 30px;
-}
-
-.servicios-totales .servicios-nosotros {
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-.servicios-reparaciones {
-  height: 400px;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 20px;
-  color: white;
-  background-image: url(../img/servicios/cambiodemodulo.jpeg);
-  background-color: rgb(80, 80, 80); 
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  display: flex;
-  border-radius: 20px;
-}
-
-.servicios-reparaciones p {
-  margin-left: 20px;
-  font-size: 18px;
-}
-
-.servicios-reparaciones ul li {
-  margin-left: 30px;
-  font-size: 18px;
-}
-
-.servicios-reparaciones button {
-  margin-left: 20px;
-  border: 1px solid white;
-  color: white;
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
-
-
-.servicios-reparaciones button:hover {
-  background-color: white;
-  color: #000;
-  transition: .3s;
-}
-
-.servicios-nosotros {
-  height: 400px;
-  width: 90%;
-  margin-top: 10px;
-  margin: 0 auto;
-  color: white;
-  background-image: url(../img/nosotros/WhatsApp\ Image\ 2023-05-09\ at\ 14.21.42.jpeg);
-  background-color: rgb(80, 80, 80); 
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  display: flex;
-  border-radius: 20px;
-}
-
-.servicios-nosotros p {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.servicios-nosotros button {
-  border: 1px solid white;
-  color: white;
-  margin-left: 20px;
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
-
-.servicios-nosotros button:hover {
-  background-color: white;
-  color: #000;
-  transition: .3s;
-}
-
-
-
-
-
-/* SEGUINOS EN INSTAGRAM */
-.seguinos-en-instagram {
-  height: 400px;
-}
-.seguinos-en-instagram h2{
-  text-align: center;
-  padding: 10px;
-  font-size: 30px;
-}
-
-.seguinos-en-instagram__imagenes {
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.seguinos-en-instagram__imagenes img {
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  flex-direction: row;
-  margin: 5px;
-}
-
-.instagram-clur {
-  text-align: center;
-  padding: 10px;
-  background-color: rgb(102, 102, 224);
-  border-color: rgb(102, 102, 224);
-  border-radius: 10px;
-  justify-content: center;
-}
-
-.instagram-clur a {
-  color: white;
-  font-family: 'Roboto';
-}
-
-
-.seguinos-en-instagram button a {
-  font-size: 18px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.seguinos-en-instagram button {
-  display: flex;
-  height: 50px;
-  width: 300px;
-  margin: 20px auto;
-}
-
-.seguinos-en-instagram a {
-  color: white;
-  font-family: 'Montserrat';
-}
-
-.seguinos-en-instagram i {
-  color: white;
-}
-
-
-/* CONTACTO */
-.contacto-item {
-  height: 800px;
-  background-color: rgb(238, 238, 238);
-  display: block;
-  align-items: center;
-}
-
-.contacto-item .sobre-nosotros {
-  height: 250px;
-  width: 420px;
-  margin: 0 10px;
-}
-
-.contacto-item .sobre-nosotros h3 {
-  padding-top: 20px;font-size: 25px;
-  font-family: 'Roboto';
-}
-
-.sobre-nosotros p{
-  margin-left: 5px;
-  font-size: 20px;
-  width: 90%;
-}
-
-.contacto-item .contacto {
-  height: 250px;
-  width: 430px;
-  margin: 0 10px;
-}
-
-.contacto-item .contacto h3 {
-  font-size: 25px;
-  font-family: 'Roboto';
-}
-
-.contacto p {
-  font-size: 20px;
-  width: 90%;
-}
-
-.direccion {
-  display: flex;
-}
-
-.numero-whatsapp {
-  display: flex;
-}
-
-.telefono {
-  display: flex;
-}
-
-.contacto-item .mapa {
-  margin: 0 auto;
-  width: 90%;
-  height: 260px;
-}
-
-
-
-
-/* PIE DE PAGINA  */
-.piedepagina {
-  background-color: black;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  display: block;
-  align-items: center;
-  position: absolute;
-
-}
-.piedepagina img {
-  height: 60px;
-  border-radius: 50%;
-  margin-top: 10px;
-}
-
-.copyright {
-  color: #f7f6da;
-}
-
-
-/* BOTON FLOTANTE */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 1px 1px 2px #999;
-  z-index:100;
-}
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
-}
-
-.my-float{
-	margin-top:16px;
+.activo {
+  border-bottom: 1px solid white;
 }
 
 
