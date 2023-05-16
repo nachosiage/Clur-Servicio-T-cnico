@@ -709,49 +709,70 @@ header {
 
 
 /* TIENDA */
-.container-tienda {
+.tienda-item {
   height: 950px;
   width: 100%;
+  background-color: rgb(238, 238, 238);
   flex-direction: column;
 }
 
-
-.titulo-tienda {
+.tienda-item h2 {
+  font-family: 'Roboto';
   text-align: center;
   padding: 20px;
   height: 50px;
+  font-size: 30px;
 }
 
-.tienda {
-  height: 300px;
-  width: 100%;
-  padding-top: 0;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+.tienda .tienda-accesorios {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.tienda-reparaciones {
+  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
   color: white;
+  background-image: url(../img/servicios/cambiodemodulo.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
 }
 
-.tienda button {
-  border-color: 1px solid white;
+.tienda-fundas p {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.tienda-fundas button {
+  margin-left: 20px;
+  border: 1px solid white;
   color: white;
   background-color: transparent;
   padding: 5px 10px;
   border-radius: 20px;
 }
 
-.tienda button:hover {
+.tienda-fundas button:hover {
   background-color: white;
   color: #000;
   transition: .3s;
 }
 
-.fundas {
-  height: 300px;
+.tienda-accesorios {
+  height: 400px;
   width: 90%;
-  background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg);
+  margin-top: 10px;
+  margin: 0 auto;
+  color: white;
+  background-image: url(../img/nosotros/WhatsApp\ Image\ 2023-05-09\ at\ 14.21.42.jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
   background-position: center center;
@@ -759,49 +780,71 @@ header {
   background-repeat: no-repeat;
   flex-direction: column;
   display: flex;
-  padding-left: 20px;
-  justify-content: center;
-}
-
-.accesorios {
-  height: 300px;
-  width: 90%;
-  background-image: url(../img/accesorios/protector-camara/Iphone14\(gray\).jpeg);
-  background-color: rgb(80, 80, 80); 
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  display: flex;
-  padding-left: 20px;
-  justify-content: center;
-}
-
-.equipos {
-  height: 300px;
-  width: 90%;
-  background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
-  background-color: rgb(80, 80, 80); 
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  display: flex;
-  padding-left: 20px;
-  justify-content: center;
-}
-
-.equipos img {
-  object-fit:cover;
-}
-
-.fundas, .accesorios, .equipos {
-  height: 250px;
-  width: 400px;
   border-radius: 20px;
 }
+
+.tienda-accesorios p {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.tienda-accesorios button {
+  border: 1px solid white;
+  color: white;
+  margin-left: 20px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.tienda-accesorios button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+
+
+.tienda-equipos {
+  height: 400px;
+  width: 90%;
+  margin-top: 10px;
+  margin: 0 auto;
+  color: white;
+  background-image: url(../img/nosotros/WhatsApp\ Image\ 2023-05-09\ at\ 14.21.42.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+
+.tienda-equipos p {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.tienda-equipos button {
+  border: 1px solid white;
+  color: white;
+  margin-left: 20px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.tienda-equipos button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+
 
 
 
