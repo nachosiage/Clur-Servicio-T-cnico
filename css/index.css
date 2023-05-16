@@ -710,7 +710,7 @@ header {
 
 /* TIENDA */
 .tienda-item {
-  height: 950px;
+  height: 700px;
   width: 100%;
   flex-direction: column;
 }
@@ -733,10 +733,10 @@ header {
 }
 
 .tienda-fundas {
-  height: 300px;
+  height: 350px;
   width: 90%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 100px;
   color: white;
   background-image: url(../img/fundas/Fundas_iphone14/WhatsApp\ Image\ 2023-05-09\ at\ 14.06.25.jpeg);
   background-color: rgb(80, 80, 80); 
@@ -770,7 +770,7 @@ header {
 }
 
 .tienda-accesorios {
-  height: 300px;
+  height: 350px;
   width: 90%;
   margin-top: 10px;
   margin: 0 auto;
@@ -810,7 +810,7 @@ header {
 
 
 .tienda-equipos {
-  height: 400px;
+  height: 350px;
   width: 90%;
   margin-top: 10px;
   margin: 0 auto;
