@@ -709,27 +709,34 @@ header {
 
 
 /* TIENDA */
-.titulo-tienda {
-  font-family: 'Roboto';
-  text-align: center;
-  padding: 20px;
-  height: 50px;
-  font-size: 30px;
+.container-tienda {
+  height: 950px;
+  width: 100%;
   flex-direction: column;
 }
 
+
+.titulo-tienda {
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+}
+
 .tienda {
-  height: 800px;
-  width: 90%;
+  height: 300px;
+  width: 100%;
   padding-top: 0;
-  margin: 0 auto;
-  display: block;
+  background-color: #fff;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   color: white;
 }
 
 .tienda button {
-  border: 1px solid white;
+  border-color: 1px solid white;
   color: white;
   background-color: transparent;
   padding: 5px 10px;
@@ -743,32 +750,23 @@ header {
 }
 
 .fundas {
-  margin: 0 AUTO;
-  height: 400px;
-  width: 300px;
-  background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg) ;
+  height: 300px;
+  width: 90%;
+  background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: gray;
   flex-direction: column;
   display: flex;
   padding-left: 20px;
   justify-content: center;
 }
 
-.fundas p {
-  font-size: 20px;
-}
-
-
-
 .accesorios {
-  margin: 10px auto;
-  height: 400px;
-  width: 300px;
+  height: 300px;
+  width: 90%;
   background-image: url(../img/accesorios/protector-camara/Iphone14\(gray\).jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
@@ -781,14 +779,9 @@ header {
   justify-content: center;
 }
 
-.accesorios p {
-  font-size: 20px;
-}
-
 .equipos {
-  margin: 10px auto;
   height: 300px;
-  width: 500px;
+  width: 90%;
   background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
@@ -799,10 +792,6 @@ header {
   display: flex;
   padding-left: 20px;
   justify-content: center;
-}
-
-.equipos p {
-  font-size: 20px;
 }
 
 .equipos img {
