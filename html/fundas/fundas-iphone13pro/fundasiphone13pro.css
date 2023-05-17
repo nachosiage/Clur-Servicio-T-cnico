@@ -307,14 +307,14 @@
     z-index: 100;
     position: absolute;
     position: fixed;
-    height: 200px;
+    height: 150px;
     width: 100%;
     background-color: black;
   }
   
   .logo img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin-left: 10px;
     border-radius: 50%;
   }
@@ -430,7 +430,7 @@
   
     .nav-list li a {
         color: #ecececec;
-        font-size: 30px;
+        font-size: 24px;
     }
 
 
