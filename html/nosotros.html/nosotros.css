@@ -381,7 +381,7 @@ header {
 .nav-list li a {
   list-style-type: none;
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   gap: 3rem;
   margin-right: 50px;
   text-decoration: none;
@@ -516,84 +516,77 @@ header {
 
 
 
+
+
+
 /* FOTOS */
 .galeria {
   width: 100%;
-  height: 900px;
+  height: 800px;
+  margin: 0 auto;
   flex-wrap: wrap;
-  display: flex;
   background-color: rgb(238, 238, 238);
-  justify-content: space-between;
+}
+
+.container.galeria {
+  width: 100%;
   margin: 0 auto;
 }
 
 .galeria img {
-  margin: 20px auto;
-  height: 150px;
-  width: 1500px;
+  height: 100px;
+  width: 100px;
+  margin: 25px auto;
   border: 1px solid rgb(120, 120, 120);
+  margin-left: 10%;
 }
   
 .fotos img:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     transition: .8s;
 }
 
 
 
 
+
 /* SEGUINOS EN INSTAGRAM */
 .seguinos-en-instagram {
-  height: 400px;
+  height:300px;
 }
 .seguinos-en-instagram h2{
   text-align: center;
   padding: 10px;
-  font-size: 30px;
 }
 
 .seguinos-en-instagram__imagenes {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 90%;
   justify-content: center;
   flex-wrap: wrap;
 }
 .seguinos-en-instagram__imagenes img {
   align-items: center;
+  height:100px;
   width: 100px;
-  height: 100px;
-  flex-direction: row;
   margin: 5px;
-}
-
-.instagram-clur {
-  text-align: center;
-  padding: 10px;
-  background-color: rgb(102, 102, 224);
-  border-color: rgb(102, 102, 224);
-  border-radius: 10px;
-  justify-content: center;
-}
-
-.instagram-clur a {
-  color: white;
-  font-family: 'Roboto';
-}
-
-
-.seguinos-en-instagram button a {
-  font-size: 18px;
-  border-radius: 20px;
-  text-align: center;
 }
 
 .seguinos-en-instagram button {
   display: flex;
-  height: 50px;
-  width: 300px;
   margin: 20px auto;
+}
+.seguinos-en-instagram button a{
+  background-color: rgb(58, 58, 255);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;  
+  margin: 0 auto;
 }
 
 .seguinos-en-instagram a {
@@ -603,48 +596,47 @@ header {
 
 .seguinos-en-instagram i {
   color: white;
+  margin-left: 5px;
+  margin-top: 15px;
 }
+
+
+
 
 
 /* CONTACTO */
 .contacto-item {
-  height: 800px;
+  margin-top: 200px;
+  height: 700px;
+  max-width: 100%;
   background-color: rgb(238, 238, 238);
-  display: block;
-  align-items: center;
+  flex-direction: column;
 }
 
 .contacto-item .sobre-nosotros {
-  height: 250px;
-  width: 420px;
-  margin: 0 10px;
+  height: 180px;
+  max-width: 80%;
+  margin-top: 20px;
 }
 
-.contacto-item .sobre-nosotros h3 {
-  padding-top: 20px;font-size: 25px;
+.contacto-item .sobre-nosotros h3{
+  font-size: 25px;
   font-family: 'Roboto';
 }
 
-.sobre-nosotros p{
+.contacto p{
   margin-left: 5px;
-  font-size: 20px;
-  width: 90%;
 }
 
 .contacto-item .contacto {
-  height: 250px;
-  width: 430px;
-  margin: 0 10px;
+  height: 180px;
+  max-width: 80%;
+  margin: 20px;
 }
 
 .contacto-item .contacto h3 {
   font-size: 25px;
   font-family: 'Roboto';
-}
-
-.contacto p {
-  font-size: 20px;
-  width: 90%;
 }
 
 .direccion {
@@ -660,79 +652,30 @@ header {
 }
 
 .contacto-item .mapa {
-  margin: 0 auto;
-  width: 430px;
-  height: 260px;
+  max-width: 80%;
 }
+
+
+
 
 
 
 
 /* PIE DE PAGINA  */
 .piedepagina {
+  height: 120px;
   background-color: black;
-  width: 100%;
+  max-width: 100%;
   bottom: 0;
   text-align: center;
-  display: block;
   align-items: center;
   position: absolute;
-
+  margin: 0;
 }
 .piedepagina img {
   height: 60px;
-  border-radius: 50%;
   margin-top: 10px;
-}
-
-.copyright {
-  color: #f7f6da;
-}
-
-
-/* BOTON FLOTANTE */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 1px 1px 2px #999;
-  z-index:100;
-}
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
-}
-
-.my-float{
-	margin-top:16px;
-}
-
-
-
-
-/* PIE DE PAGINA  */
-.piedepagina {
-  background-color: black;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  display: block;
-  align-items: center;
-  position: absolute;
-
-}
-.piedepagina img {
-  height: 60px;
   border-radius: 50%;
-  margin-top: 10px;
 }
 
 .copyright {

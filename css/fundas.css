@@ -431,6 +431,19 @@ header {
 
 
 
+  /* INFORMACION */
+.contenedor .informacion {
+  height: 150px;
+  font-size: 23px;
+}
+
+.contenedor .informacion a i{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+
   /* CONTACTO */
 .contacto-item {
   height: 800px;
@@ -483,9 +496,8 @@ header {
 }
 
 .contacto-item .mapa {
-  margin: 5px auto;
-  width: 435px;
-  border: 1px solid rgb(209, 209, 209);
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 

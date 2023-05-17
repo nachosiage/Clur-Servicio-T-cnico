@@ -13,121 +13,121 @@ body {
   padding-bottom: 220px;
   min-height: 100vh;
 }
-
-/* HEADER */
-header {
-  z-index: 100;
-  position: absolute;
-  position: fixed;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-}
-
-.logo {
-  max-width: 5rem;
+ 
+  /* HEADER */
+  header {
+    z-index: 100;
+    top: 0;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: relative;
+    position: fixed;
+  }
+  .logo {
+  max-width: 90px;
   margin-left: 50px;
   border-radius: 50%;
-}
+  }
   
-.nav-list {
+  .nav-list {
   list-style-type: none;
   display: flex;
   gap: 3rem;
   margin-right: 50px;
-}
+  }
   
-.nav-list li a {
+  .nav-list li a {
   text-decoration: none;
   color: white;
+  font-size: 18px;
   }
-
+  
   .nav-list li a.active {
     text-decoration:underline;
   }
   
-.nav-list li a:hover {
+  .nav-list li a:hover {
   text-decoration: none;
   color: black;
   background-color: white;
   padding: 10px;
   border-radius: 20px;
   transition: .2s;
-}
-
-.jet-dropdown-arrow {
+  }
+  
+  .jet-dropdown-arrow {
   color: #fff;
-}
-
-.jet-dropdown-arrow:hover {
+  }
+  
+  .jet-dropdown-arrow:hover {
   color: #000;
-}
-
-.menu-vertical {
+  }
+  
+  .menu-vertical {
   position: absolute;
   display: none;
   list-style: none;
   width: 250px;
   background-color: black;
-}
-
-.menu-vertical li a  {
+  }
+  
+  .menu-vertical li a  {
   display: block;
   color: white;
   padding: 15px 15px 15px 20px;
-}
-
-.nav-list li:hover .menu-vertical {
+  }
+  
+  .nav-list li:hover .menu-vertical {
   display: block;
-}
-
-.abrir-menu i,
-.cerrar-menu i {
+  }
+  
+  .abrir-menu i,
+  .cerrar-menu i {
   color: white;
   font-size: 30px
-}
+  }
   
-.abrir-menu,
-.cerrar-menu {
+  .abrir-menu,
+  .cerrar-menu {
   display: none;
-}
+  }
 
-.activo {
-  border-bottom: 1px solid white;
-}
+  .activo {
+    border-bottom: 1px solid white;
+  }
+
+
 
 
 /* SLIDER */
 .carousel {
-  margin-top:150px;
-  padding-top: 130PX;
+  top: 140px;
   width: 100vw;
+  height: 750px;
   max-width: 1000px;
   min-width: 320px;
   margin: auto;
 }
 
-.carousel button {
-  padding-top: 150px;
-}
-
 .carousel-item img {
-  margin-top:300px;
-  border-radius: 50px;
-  height: 700px;
+  border-radius: 15px;
   margin: 0 auto;
   width: 100%;
-  box-shadow: 0px 3px 5px rgba(15,15,15,.5);
+  height: 600px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
 }
-
 
 
 /* QUIENES SOMOS */
 .quienes-somos{
-  height: 400px;
+  height: 300px;
   background-color: rgb(238, 238, 238);
   margin-top: 30px;
 }
@@ -151,27 +151,30 @@ header {
 
 
 /* TIENDA */
-.titulo-tienda {
-  font-family: 'Roboto';
+.tienda-item {
+  height: 300px;
+  width: 100%;
+}
+.tienda-item h2 {
   text-align: center;
-  padding: 20px;
-  height: 50px;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  justify-content: center;
+  align-items: center;
 }
 
 .tienda {
-  height: 300px;
+  margin-top: 20px;
   width: 100%;
   padding-top: 0;
-  background-color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-around;
   color: white;
 }
 
 .tienda button {
-  border-color: 1px solid white;
+  border: 1px solid white;
   color: white;
   background-color: transparent;
   padding: 5px 10px;
@@ -184,7 +187,7 @@ header {
   transition: .3s;
 }
 
-.fundas {
+.tienda-fundas {
   height: 300px;
   width: 250px;
   background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg);
@@ -199,7 +202,7 @@ header {
   justify-content: center;
 }
 
-.accesorios {
+.tienda-accesorios {
   height: 300px;
   width: 250px;
   background-image: url(../img/accesorios/protector-camara/Iphone14\(gray\).jpeg);
@@ -214,7 +217,7 @@ header {
   justify-content: center;
 }
 
-.equipos {
+.tienda-equipos {
   height: 300px;
   width: 250px;
   background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
@@ -229,11 +232,7 @@ header {
   justify-content: center;
 }
 
-.equipos img {
-  object-fit:cover;
-}
-
-.fundas, .accesorios, .equipos {
+.tienda-fundas, .tienda-accesorios, .tienda-equipos {
   height: 250px;
   width: 400px;
   border-radius: 20px;
@@ -243,6 +242,7 @@ header {
 
 /* SERVICIOS */
 .servicios-item {
+  margin-top: 100px;
   height: 750px;
   width: 100%;
   background-color: rgb(238, 238, 238);
@@ -267,7 +267,7 @@ header {
   margin: 0 auto;
   margin-top: 20px;
   color: white;
-  background-image: url(../img/ingresos/ingreso3.jpeg);
+  background-image: url(../img/servicios/cambiodemodulo.jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
   background-position: center center;
@@ -291,7 +291,7 @@ header {
 }
 
 .servicios-reparaciones button {
-  border-color: 1px solid white;
+  border: 1px solid white;
   color: white;
   background-color: transparent;
   padding: 5px 10px;
@@ -310,7 +310,7 @@ header {
   margin-top: 10px;
   margin: 0 auto;
   color: white;
-  background-image: url(../img/ingresos/ingreso3.jpeg);
+  background-image: url(../img/nosotros/WhatsApp\ Image\ 2023-05-09\ at\ 14.22.01.jpeg);
   background-color: rgb(80, 80, 80); 
   background-blend-mode: soft-light;
   background-position: center center;
@@ -319,6 +319,7 @@ header {
   flex-direction: column;
   display: flex;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .servicios-nosotros p {
@@ -327,7 +328,7 @@ header {
 }
 
 .servicios-nosotros button {
-  border-color: 1px solid white;
+  border: 1px solid white;
   color: white;
   margin-left: 20px;
   background-color: transparent;
@@ -340,6 +341,10 @@ header {
   color: #000;
   transition: .3s;
 }
+
+
+
+
 
 /* SEGUINOS EN INSTAGRAM */
 .seguinos-en-instagram {
@@ -522,98 +527,494 @@ header {
     100%{margin-left: -300%;}
 }
 
-@media screen and (max-width: 1300px) {
-
-  html {
-    scroll-behavior: smooth;
-}
+@media screen and (max-width: 1000px) {
 
 
-  
-/* HEADER */
-header {
-  z-index: 100;
-  position: absolute;
-  position: fixed;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-}
-
-.logo {
-  max-width: 5rem;
-  margin-left: 50px;
-  border-radius: 50%;
-}
-  
-.nav-list {
-  list-style-type: none;
-  display: flex;
-  gap: 3rem;
-  margin-right: 50px;
-}
-  
-.nav-list li a {
-  text-decoration: none;
-  color: white;
-  }
-
-  .nav-list li a.active {
-    text-decoration:underline;
+  /* HEADER */
+  header {
+    height: 200px;
+    max-width: 100%;
+    align-items: center;
+    background-color: black;
   }
   
-.nav-list li a:hover {
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  padding: 10px;
-  border-radius: 20px;
-  transition: .2s;
-}
+  .logo {
+    max-width: 80px;
+    margin-left: 50px;
+    border-radius: 50%;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 100px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
 
-.jet-dropdown-arrow {
-  color: #fff;
-}
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      margin-right: 30px;
+      border: 0;
+      font-size: 50px;
+      background-color: transparent;
+      cursor: pointer;
+  }
 
-.jet-dropdown-arrow:hover {
-  color: #000;
-}
+  .abrir-menu {
+      color: white;
+      margin-left: 100px;
+  }
 
-.menu-vertical {
-  position: absolute;
-  display: none;
-  list-style: none;
-  width: 250px;
-  background-color: black;
-}
+  .cerrar-menu {
+      color: #ececec;
+      font-size: 80px;
+  }
 
-.menu-vertical li a  {
-  display: block;
-  color: white;
-  padding: 15px 15px 15px 20px;
-}
-
-.nav-list li:hover .menu-vertical {
-  display: block;
-}
-
-.abrir-menu i,
+  .abrir-menu i,
 .cerrar-menu i {
   color: white;
-  font-size: 30px
+  font-size: 50px
 }
+
+  .nav {
+    z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+      transition: .5s;
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
   
-.abrir-menu,
-.cerrar-menu {
-  display: none;
+  .nav-list {
+      flex-direction: column;
+      align-items: end;
+  }
+  
+
+
+
+
+    /* SLIDER */
+.carousel {
+  margin-top: 500px;
+  top: 220px;
+  width: 80%;
+  margin: auto;
+  height: 550px;
 }
 
-.activo {
-  border-bottom: 1px solid white;
+.carousel-item img {
+  margin-top: 500px;
+  justify-content: center;
+  height: 500px;
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 80%;
 }
 
+
+
+
+/* QUIENES SOMOS */
+.quienes-somos{
+  max-width: 100%;
+  height: 300px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 200px;
+}
+
+.quienes-somos h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-somos p {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+/* TIENDA */
+.tienda-item {
+  height:700px;
+  max-width: 100%;
+}
+.tienda-item h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  justify-content: center;
+  align-items: center;
+}
+
+.tienda {
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.tienda button {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.tienda button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+.tienda-fundas {
+  height: 300px;
+  width: 80%;
+  background-image: url(../img/fundas/Fundas_iphone14ProMax/WhatsApp\ Image\ 2023-05-09\ at\ 14.11.49.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.tienda-accesorios {
+  height: 300px;
+  width: 250px;
+  background-image: url(../img/accesorios/protector-camara/Iphone14\(gray\).jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.tienda-equipos {
+  height: 300px;
+  width: 250px;
+  background-image: url(../img/equipos/usados/iphone11promax/iphone11promax_trasera.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.tienda-fundas, .tienda-accesorios, .tienda-equipos {
+  height: 250px;
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+
+/* SERVICIOS */
+.servicios-item {
+  margin-top: 300px;
+  height: 750px;
+  max-width: 100%;
+  background-color: rgb(238, 238, 238);
+  flex-direction: column;
+}
+
+.servicios-item h2 {
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+}
+
+.servicios-totales .servicios-nosotros {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.servicios-reparaciones {
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  background-image: url(../img/servicios/cambiodemodulo.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+
+.servicios-reparaciones p {
+  margin-left: 20px;
+}
+
+.servicios-reparaciones ul li {
+  margin-left: 30px;
+}
+
+.servicios-reparaciones button {
+  margin-left: 20px;
+}
+
+.servicios-reparaciones button {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.servicios-reparaciones button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+.servicios-nosotros {
+  height: 300px;
+  width: 80%;
+  margin-top: 10px;
+  margin: 0 auto;
+  color: white;
+  background-image: url(../img/nosotros/WhatsApp\ Image\ 2023-05-09\ at\ 14.22.01.jpeg);
+  background-color: rgb(80, 80, 80); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.servicios-nosotros p {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.servicios-nosotros button {
+  border: 1px solid white;
+  color: white;
+  margin-left: 20px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.servicios-nosotros button:hover {
+  background-color: white;
+  color: #000;
+  transition: .3s;
+}
+
+
+
+
+
+/* SEGUINOS EN INSTAGRAM */
+.seguinos-en-instagram {
+  height:300px;
+}
+.seguinos-en-instagram h2{
+  text-align: center;
+  padding: 10px;
+}
+
+.seguinos-en-instagram__imagenes {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.seguinos-en-instagram__imagenes img {
+  align-items: center;
+  height:100px;
+  width: 100px;
+  margin: 5px;
+}
+
+.seguinos-en-instagram button {
+  display: flex;
+  margin: 20px auto;
+}
+.seguinos-en-instagram button a{
+  background-color: rgb(58, 58, 255);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;  
+  margin: 0 auto;
+}
+
+.seguinos-en-instagram a {
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.seguinos-en-instagram i {
+  color: white;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+
+
+
+
+/* CONTACTO */
+.contacto-item {
+  margin-top: 200px;
+  height: 700px;
+  max-width: 100%;
+  background-color: rgb(238, 238, 238);
+  flex-direction: column;
+}
+
+.contacto-item .sobre-nosotros {
+  height: 180px;
+  max-width: 80%;
+  margin-top: 20px;
+}
+
+.contacto-item .sobre-nosotros h3{
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.contacto p{
+  margin-left: 5px;
+}
+
+.contacto-item .contacto {
+  height: 180px;
+  max-width: 80%;
+  margin: 20px;
+}
+
+.contacto-item .contacto h3 {
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.direccion {
+  display: flex;
+}
+
+.numero-whatsapp {
+  display: flex;
+}
+
+.telefono {
+  display: flex;
+}
+
+.contacto-item .mapa {
+  max-width: 80%;
+}
+
+
+
+
+
+
+
+/* PIE DE PAGINA  */
+.piedepagina {
+  height: 120px;
+  background-color: black;
+  max-width: 100%;
+  bottom: 0;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+}
+.piedepagina img {
+  height: 60px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.copyright {
+  color: #f7f6da;
+}
+
+
+/* BOTON FLOTANTE */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 1px 1px 2px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
 
 }

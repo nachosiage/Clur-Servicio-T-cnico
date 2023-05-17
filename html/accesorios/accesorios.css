@@ -446,6 +446,14 @@ display: none;
   font-size: 23px;
 }
 
+.accesorios .informacion {
+  height: 150px;
+}
+
+.accesorios .informacion .precio {
+  margin: 30px;
+}
+
 
 
 
@@ -501,9 +509,8 @@ display: none;
 }
 
 .contacto-item .mapa {
-  margin: 5px auto;
-  width: 435px;
-  border: 1px solid rgb(209, 209, 209);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 

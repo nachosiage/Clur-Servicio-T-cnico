@@ -434,6 +434,19 @@
         font-size: 30px;
     }
   
+
+
+    /* INFORMACION */
+.contenedor .informacion {
+  height: 150px;
+  font-size: 23px;
+}
+
+.contenedor .informacion .precio {
+  margin-top: 30px;
+}
+
+  
   
   
     /* CONTACTO */
@@ -488,9 +501,8 @@
   }
   
   .contacto-item .mapa {
-    margin: 5px auto;
-    width: 435px;
-    border: 1px solid rgb(209, 209, 209);
+    margin: 0 auto;
+    max-width: 80%;
   }
   
   
